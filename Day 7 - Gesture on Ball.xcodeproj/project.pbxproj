@@ -12,6 +12,8 @@
 		0DB24D80200337EC00311948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB24D7E200337EC00311948 /* Main.storyboard */; };
 		0DB24D82200337EC00311948 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB24D81200337EC00311948 /* Assets.xcassets */; };
 		0DB24D85200337EC00311948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB24D83200337EC00311948 /* LaunchScreen.storyboard */; };
+		0DB24D8D20033F0D00311948 /* GestureProgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB24D8C20033F0D00311948 /* GestureProgViewController.swift */; };
+		0DB24D8F2003418200311948 /* Baseball.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DB24D8E2003418200311948 /* Baseball.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0DB24D81200337EC00311948 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DB24D84200337EC00311948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DB24D86200337EC00311948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DB24D8C20033F0D00311948 /* GestureProgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureProgViewController.swift; sourceTree = "<group>"; };
+		0DB24D8E2003418200311948 /* Baseball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Baseball.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +58,9 @@
 		0DB24D79200337EC00311948 /* Day 7 - Gesture on Ball */ = {
 			isa = PBXGroup;
 			children = (
+				0DB24D8E2003418200311948 /* Baseball.png */,
 				0DB24D7A200337EC00311948 /* AppDelegate.swift */,
+				0DB24D8C20033F0D00311948 /* GestureProgViewController.swift */,
 				0DB24D7C200337EC00311948 /* ViewController.swift */,
 				0DB24D7E200337EC00311948 /* Main.storyboard */,
 				0DB24D81200337EC00311948 /* Assets.xcassets */,
@@ -126,6 +132,7 @@
 				0DB24D85200337EC00311948 /* LaunchScreen.storyboard in Resources */,
 				0DB24D82200337EC00311948 /* Assets.xcassets in Resources */,
 				0DB24D80200337EC00311948 /* Main.storyboard in Resources */,
+				0DB24D8F2003418200311948 /* Baseball.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DB24D7D200337EC00311948 /* ViewController.swift in Sources */,
+				0DB24D8D20033F0D00311948 /* GestureProgViewController.swift in Sources */,
 				0DB24D7B200337EC00311948 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

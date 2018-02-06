@@ -1,24 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Day_7___Gesture_on_Ball" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JkC-mA-6pG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GestureRecogniser " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqj-Gf-ed6">
+                                        <rect key="frame" x="84" y="17" width="209" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="qcF-OH-Zp5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.3236463416" green="0.70863018129999999" blue="0.34905137310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Tqj-Gf-ed6" firstAttribute="top" secondItem="JkC-mA-6pG" secondAttribute="top" constant="17" id="4sW-VH-SOg"/>
+                                    <constraint firstAttribute="height" constant="70" id="EDg-8U-q1I"/>
+                                    <constraint firstItem="Tqj-Gf-ed6" firstAttribute="centerX" secondItem="JkC-mA-6pG" secondAttribute="centerX" constant="1" id="Jbv-zs-GoV"/>
+                                </constraints>
+                            </view>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Baseball.png" translatesAutoresizingMaskIntoConstraints="NO" id="OCg-5w-MF3">
+                                <rect key="frame" x="137" y="547" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Afl-eS-04G"/>
+                                    <constraint firstAttribute="width" constant="100" id="NIF-dV-STo"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="HaP-nm-bWC" appends="YES" id="dR1-pN-K1g"/>
+                                    <outletCollection property="gestureRecognizers" destination="PL0-gK-SwV" appends="YES" id="sdO-iV-WPE"/>
+                                    <outletCollection property="gestureRecognizers" destination="4dD-7o-a3t" appends="YES" id="fgj-Ib-JLV"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3236463416" green="0.70863018129999999" blue="0.34905137310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="JkC-mA-6pG" secondAttribute="top" constant="20" id="0JO-jN-Bia"/>
+                            <constraint firstItem="JkC-mA-6pG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="41H-hI-Msn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OCg-5w-MF3" secondAttribute="bottom" constant="20" id="BFK-NB-Lov"/>
+                            <constraint firstItem="OCg-5w-MF3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e6q-A2-fDU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JkC-mA-6pG" secondAttribute="trailing" id="tBK-9k-sfb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="ballImageView" destination="OCg-5w-MF3" id="tSZ-38-0eI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="HaP-nm-bWC">
+                    <connections>
+                        <action selector="handlePanWithRecogniser:" destination="BYZ-38-t0r" id="PG2-MY-sfL"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="vzi-up-aGZ"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="PL0-gK-SwV">
+                    <connections>
+                        <action selector="handlePinchWithRecognizer:" destination="BYZ-38-t0r" id="hI5-Ss-AKZ"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="4dD-7o-a3t">
+                    <connections>
+                        <action selector="handleRotateWithRecognizer:" destination="BYZ-38-t0r" id="gRO-PO-7OV"/>
+                    </connections>
+                </rotationGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--Gesture Prog View Controller-->
+        <scene sceneID="9qV-T5-ial">
+            <objects>
+                <viewController id="szJ-WP-zhz" customClass="GestureProgViewController" customModule="Day_7___Gesture_on_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gMk-Ve-i9X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3xU-y5-rYn">
+                                <rect key="frame" x="137" y="20" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80935222809999996" green="0.40491362190000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="IYa-5M-eim"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="3xU-y5-rYn" id="D17-s1-A3N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i01-bx-quP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1255" y="1252"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Baseball.png" width="2000" height="2000"/>
+    </resources>
 </document>
